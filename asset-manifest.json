@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/PetsFit/static/css/main.f21f6f4e.css",
+    "main.js": "/PetsFit/static/js/main.e932fb67.js",
+    "static/js/453.58d1d241.chunk.js": "/PetsFit/static/js/453.58d1d241.chunk.js",
+    "static/media/human_dog_eating.mp4": "/PetsFit/static/media/human_dog_eating.75268ab32ef272bf3104.mp4",
+    "static/media/diet_pollo.png": "/PetsFit/static/media/diet_pollo.e802fba0941fc4f3010f.png",
+    "static/media/diet_cuy.png": "/PetsFit/static/media/diet_cuy.5ea55453f2c39abb0625.png",
+    "static/media/diet_beef.png": "/PetsFit/static/media/diet_beef.44ee3aa1656c8e50b9c0.png",
+    "static/media/diet_salmongamba.png": "/PetsFit/static/media/diet_salmongamba.d62eeffb2d896a207d36.png",
+    "static/media/dog_beef_diet.png": "/PetsFit/static/media/dog_beef_diet.d28b7ccf799d12e423c1.png",
+    "static/media/dog_chicken_diet.png": "/PetsFit/static/media/dog_chicken_diet.e0a7e13702839ed106f7.png",
+    "static/media/diet_alpaca.png": "/PetsFit/static/media/diet_alpaca.10cd6b70b5fdb0f3f3ea.png",
+    "static/media/cat_fish_diet.png": "/PetsFit/static/media/cat_fish_diet.d34182cc5a1ed5e84176.png",
+    "static/media/diet_pavo.png": "/PetsFit/static/media/diet_pavo.66143c22d40fdf03b16c.png",
+    "static/media/cat_turkey_diet.png": "/PetsFit/static/media/cat_turkey_diet.d1d2227592b722554f81.png",
+    "static/media/petsfit_mainlogo.png": "/PetsFit/static/media/petsfit_mainlogo.ea0d2c3a819255052923.png",
+    "static/media/price_cat.png": "/PetsFit/static/media/price_cat.a99ee5b74ab3b19a5acb.png",
+    "static/media/price_dog.png": "/PetsFit/static/media/price_dog.c486373c0706acc7d70e.png",
+    "static/media/price_cat2.png": "/PetsFit/static/media/price_cat2.62f79981ad6d9c52d8a3.png",
+    "static/media/dog_card.png": "/PetsFit/static/media/dog_card.b83c3aeaf9af5f25f83c.png",
+    "static/media/price_dog2.png": "/PetsFit/static/media/price_dog2.895965fe48e185a19fd0.png",
+    "static/media/cat_card2.png": "/PetsFit/static/media/cat_card2.da32ee6d39cb2801fa69.png",
+    "static/media/dog_card2.png": "/PetsFit/static/media/dog_card2.341a90b4944268b23fea.png",
+    "static/media/cat_card.png": "/PetsFit/static/media/cat_card.253ab388a0624568cf40.png",
+    "index.html": "/PetsFit/index.html",
+    "main.f21f6f4e.css.map": "/PetsFit/static/css/main.f21f6f4e.css.map",
+    "main.e932fb67.js.map": "/PetsFit/static/js/main.e932fb67.js.map",
+    "453.58d1d241.chunk.js.map": "/PetsFit/static/js/453.58d1d241.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f21f6f4e.css",
+    "static/js/main.e932fb67.js"
+  ]
+}
