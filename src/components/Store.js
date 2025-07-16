@@ -1,11 +1,13 @@
 import React from 'react';
+import { ShoppingCart, Plus } from 'lucide-react';
+
 import pollo_diet from './../assets/diet_pollo.png';
 import ternera_diet from './../assets/diet_beef.png';
 import salmon_diet from './../assets/diet_salmongamba.png';
 import cuy_diet from './../assets/diet_cuy.png';
 import alpaca_diet from './../assets/diet_alpaca.png';
 import pavo_diet from './../assets/diet_pavo.png';
-function Store() {
+function Store({ addToCart }) {
     // Datos de los productos (2 filas x 3 productos = 6 productos)
     const products = [
         // Primera fila
@@ -66,6 +68,13 @@ function Store() {
         }
     ];
 
+ const handleAddToCart = (product) => {
+        addToCart(product);
+        
+        // Feedback visual opcional
+        // Podrías agregar una notificación toast aquí
+        console.log(`Producto agregado al carrito: ${product.title}`);
+    };
     return (
         <section className="py-16 px-8 bg-white">
             <div className="max-w-7xl mx-auto">
@@ -125,9 +134,21 @@ function Store() {
                                 </div>
 
                                 {/* Botón de acción */}
-                                <button className="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-full transition-all duration-300 shadow-md hover:shadow-lg">
-                                    Seleccionar opciones
-                                </button>
+                                <div className="space-y-3">
+                                    {/* Botón principal: Agregar al carrito */}
+                                    <button 
+                                        onClick={() => handleAddToCart(product)}
+                                        className="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-full transition-all duration-300 shadow-md hover:shadow-lg flex items-center justify-center space-x-2"
+                                    >
+                                        <ShoppingCart className="w-5 h-5" />
+                                        <span>Agregar al carrito</span>
+                                    </button>
+                                    
+                                    {/* Botón secundario: Seleccionar opciones */}
+                                    <button className="w-full bg-gray-200 hover:bg-gray-300 text-[#4a3728] font-bold py-2 px-6 rounded-full transition-all duration-300 text-sm">
+                                        Ver detalles
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     ))}

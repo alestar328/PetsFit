@@ -1,7 +1,7 @@
-import { User } from 'lucide-react';
+import { User, ShoppingCart  } from 'lucide-react';
 
 
-function Header({openCalculator}) {
+function Header({openCalculator, openCart, cartItemsCount}) {
     return (
     <>
           <div className="bg-orange-500 text-white py-2 px-8">
@@ -32,7 +32,20 @@ function Header({openCalculator}) {
                     <User className="w-5 h-5" />
                     <span>Mi cuenta</span>
                 </button>
-
+                <button 
+                    onClick={openCart}
+                    className="relative flex items-center space-x-2 text-[#4a3728] hover:text-[#6b4c3a] transition-colors font-medium p-2 rounded-lg hover:bg-gray-100"
+                >
+                    <ShoppingCart className="w-6 h-6" />
+                    <span className="hidden md:inline">Carrito</span>
+                    
+                    {/* Badge con número de productos */}
+                    {cartItemsCount > 0 && (
+                        <span className="absolute -top-2 -right-2 bg-orange-500 text-white text-xs font-bold rounded-full w-6 h-6 flex items-center justify-center">
+                            {cartItemsCount > 99 ? '99+' : cartItemsCount}
+                        </span>
+                    )}
+                </button>
                 {/* Botón Calcular mi precio */}
                 <button onClick={openCalculator}  className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-full text-sm transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105">
                     Calcular mi precio
