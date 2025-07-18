@@ -11,37 +11,32 @@ function Footer() {
                         href="#home" 
                         className="text-gray-700 hover:text-gray-900 transition-colors font-medium text-lg"
                     >
-                        Home
+                        Inicio
                     </a>
                     <a 
                         href="#experience" 
                         className="text-gray-700 hover:text-gray-900 transition-colors font-medium text-lg"
                     >
-                        Experience
+                        Reseñas
                     </a>
-                    <a 
-                        href="#news" 
-                        className="text-gray-700 hover:text-gray-900 transition-colors font-medium text-lg"
-                    >
-                        News
-                    </a>
+              
                     <a 
                         href="#about" 
                         className="text-gray-700 hover:text-gray-900 transition-colors font-medium text-lg"
                     >
-                        About us
+                        Sobre nosotros
                     </a>
                     <a 
                         href="#jobs" 
                         className="text-gray-700 hover:text-gray-900 transition-colors font-medium text-lg"
                     >
-                        Jobs
+                        Colaboradores
                     </a>
                     <a 
                         href="#contact" 
                         className="text-gray-700 hover:text-gray-900 transition-colors font-medium text-lg"
                     >
-                        Contact
+                        Contacto
                     </a>
                 </nav>
 
@@ -62,12 +57,13 @@ function Footer() {
                     >
                         <Instagram className="w-6 h-6" />
                     </a>
+
                 </div>
 
                 {/* Copyright */}
                 <div className="text-center">
                     <p className="text-gray-500 text-sm">
-                        © Copyright 2019 - Lift Media
+                        © Copyright 2025 - Prometeux Webs
                     </p>
                 </div>
             </div>

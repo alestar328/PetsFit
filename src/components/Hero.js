@@ -1,19 +1,19 @@
 import React from 'react';
-import logo from '../assets/petsfit_mainlogo.png'
+import logo from '../assets/logo_siluetas.png'
 import main_video from '../assets/videos/human_dog_eating.mp4';
 
 function Hero() {
     return (
-        <section id="home" className="px-8 py-10 max-w-7xl mx-auto">
+        <section id="home" className="px-8 py-10 max-w-7xl mx-auto my-10">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                 
                 {/* Left Column - Content */}
                 <div className="text-center lg:text-center">
-                    <img 
+                    {/* <img 
                         src={logo} 
                         alt="PetsFit logo" 
                         className="mx-auto mb-6 w-48 md:w-60 lg:w-80 h-auto"
-                    />
+                    /> */}
                     
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold mb-6 text-[#4a3728] leading-tight">
                         Como la comida casera, no hay otra

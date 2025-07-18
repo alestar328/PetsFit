@@ -11,7 +11,7 @@ function QuickPricing() {
             id: 1,
             size: "Minis 0-2 kg",
             originalPrice: "1,49",
-            currentPrice: "1,04",
+            currentPrice: "4.90",
             image: dog, // Reemplaza con tu imagen del chihuahua
             alt: "Perro mini chihuahua",
             badge: "YUMM YAMMY",
@@ -22,8 +22,8 @@ function QuickPricing() {
         {
             id: 2,
             size: "Pequeños 3-9 kg",
-            originalPrice: "1,75",
-            currentPrice: "1,22",
+            originalPrice: "7.90",
+            currentPrice: "6.90",
             image: cat, // Reemplaza con tu imagen del bulldog francés
             alt: "Perro pequeño bulldog francés",
             badge: null,
@@ -34,8 +34,8 @@ function QuickPricing() {
         {
             id: 3,
             size: "Medianos 10-25 kg",
-            originalPrice: "2,62",
-            currentPrice: "1,83",
+            originalPrice: "10.80",
+            currentPrice: "8.56",
             image: cat2, // Reemplaza con tu imagen del pastor australiano
             alt: "Perro mediano pastor australiano",
             badge: null,
@@ -45,8 +45,8 @@ function QuickPricing() {
         {
             id: 4,
             size: "Grandes +25 kg",
-            originalPrice: "3,74",
-            currentPrice: "2,62",
+            originalPrice: "12.50",
+            currentPrice: "9.99",
             image: dog2, // Reemplaza con tu imagen del san bernardo
             alt: "Perro grande san bernardo",
             badge: null,
@@ -111,7 +111,7 @@ function QuickPricing() {
 
                                 {/* Precio actual grande */}
                                 <div className="text-3xl font-bold text-[#4a3728]">
-                                    {plan.currentPrice} €
+                                    {plan.currentPrice} S/.
                                     <span className="text-sm font-normal text-gray-600">/día*</span>
                                 </div>
                             </div>
