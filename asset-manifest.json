@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/PetsFit/static/css/main.f21f6f4e.css",
-    "main.js": "/PetsFit/static/js/main.e932fb67.js",
+    "main.css": "/PetsFit/static/css/main.295fa802.css",
+    "main.js": "/PetsFit/static/js/main.68a60477.js",
     "static/js/453.58d1d241.chunk.js": "/PetsFit/static/js/453.58d1d241.chunk.js",
     "static/media/human_dog_eating.mp4": "/PetsFit/static/media/human_dog_eating.75268ab32ef272bf3104.mp4",
     "static/media/diet_pollo.png": "/PetsFit/static/media/diet_pollo.e802fba0941fc4f3010f.png",
@@ -14,8 +14,8 @@
     "static/media/cat_fish_diet.png": "/PetsFit/static/media/cat_fish_diet.d34182cc5a1ed5e84176.png",
     "static/media/diet_pavo.png": "/PetsFit/static/media/diet_pavo.66143c22d40fdf03b16c.png",
     "static/media/cat_turkey_diet.png": "/PetsFit/static/media/cat_turkey_diet.d1d2227592b722554f81.png",
-    "static/media/petsfit_mainlogo.png": "/PetsFit/static/media/petsfit_mainlogo.ea0d2c3a819255052923.png",
     "static/media/price_cat.png": "/PetsFit/static/media/price_cat.a99ee5b74ab3b19a5acb.png",
+    "static/media/header_logo.png": "/PetsFit/static/media/header_logo.0b0660c841fb31cadc64.png",
     "static/media/price_dog.png": "/PetsFit/static/media/price_dog.c486373c0706acc7d70e.png",
     "static/media/price_cat2.png": "/PetsFit/static/media/price_cat2.62f79981ad6d9c52d8a3.png",
     "static/media/dog_card.png": "/PetsFit/static/media/dog_card.b83c3aeaf9af5f25f83c.png",
@@ -23,13 +23,14 @@
     "static/media/cat_card2.png": "/PetsFit/static/media/cat_card2.da32ee6d39cb2801fa69.png",
     "static/media/dog_card2.png": "/PetsFit/static/media/dog_card2.341a90b4944268b23fea.png",
     "static/media/cat_card.png": "/PetsFit/static/media/cat_card.253ab388a0624568cf40.png",
+    "static/media/logo_siluetas.png": "/PetsFit/static/media/logo_siluetas.a32951e142f254ba9c59.png",
     "index.html": "/PetsFit/index.html",
-    "main.f21f6f4e.css.map": "/PetsFit/static/css/main.f21f6f4e.css.map",
-    "main.e932fb67.js.map": "/PetsFit/static/js/main.e932fb67.js.map",
+    "main.295fa802.css.map": "/PetsFit/static/css/main.295fa802.css.map",
+    "main.68a60477.js.map": "/PetsFit/static/js/main.68a60477.js.map",
     "453.58d1d241.chunk.js.map": "/PetsFit/static/js/453.58d1d241.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f21f6f4e.css",
-    "static/js/main.e932fb67.js"
+    "static/css/main.295fa802.css",
+    "static/js/main.68a60477.js"
   ]
 }
