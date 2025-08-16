@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Header from './components/Header';
 import Hero from './pages/Hero';
 import AboutUs from './pages/AboutUs';
+import Login from './pages/Login';
 import PetsCards from './components/PetsCards';
 import QuickPricing from './components/QuickPricing';
 import Diets from './components/Diets';
@@ -28,6 +29,7 @@ interface CartItem extends Product {
 const App: React.FC = () => {
     const [isCalculatorOpen, setIsCalculatorOpen] = useState<boolean>(false);
     const [isCartOpen, setIsCartOpen] = useState<boolean>(false);
+    const [isLoginOpen, setIsLoginOpen] = useState<boolean>(false);
     const [cartItems, setCartItems] = useState<CartItem[]>([]);
 
     // Función para abrir el calculador
@@ -46,6 +48,14 @@ const App: React.FC = () => {
 
     const closeCart = (): void => {
         setIsCartOpen(false);
+    };
+
+    const openLogin = (): void => {
+        setIsLoginOpen(true);
+    };
+
+    const closeLogin = (): void => {
+        setIsLoginOpen(false);
     };
 
     const addToCart = (product: Product): void => {
@@ -102,6 +112,7 @@ const App: React.FC = () => {
             <Header 
                 openCalculator={openCalculator}
                 openCart={openCart}
+                openLogin={openLogin}
                 cartItemsCount={getTotalItems()}
             />
             <Hero />
@@ -112,7 +123,7 @@ const App: React.FC = () => {
             <QuickPricing />
             <Diets />
             <div id="store">
-                <Store addToCart={addToCart} />
+            <Store addToCart={addToCart} />
             </div>
             <Footer />
 
@@ -120,6 +131,10 @@ const App: React.FC = () => {
                 <div className="fixed inset-0 z-50">
                     <BudgetCalculator onClose={closeCalculator} />
                 </div>
+            )}
+
+            {isLoginOpen && (
+                <Login onClose={closeLogin} />
             )}
 
             <ShoppingCartLat

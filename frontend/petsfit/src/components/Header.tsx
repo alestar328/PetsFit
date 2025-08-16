@@ -5,10 +5,11 @@ import logo from '../assets/header_logo.png';
 interface HeaderProps {
     openCalculator: () => void;
     openCart: () => void;
+    openLogin: () => void;
     cartItemsCount: number;
 }
 
-const Header: React.FC<HeaderProps> = ({ openCalculator, openCart, cartItemsCount }) => {
+const Header: React.FC<HeaderProps> = ({ openCalculator, openCart, openLogin, cartItemsCount }) => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
 
     const toggleMobileMenu = (): void => {
@@ -70,7 +71,10 @@ const Header: React.FC<HeaderProps> = ({ openCalculator, openCart, cartItemsCoun
                         {/* Lado derecho: Botones de acción */}
                         <div className="flex items-center space-x-2">
                             {/* Botón Mi cuenta - oculto en móvil pequeño */}
-                            <button className="hidden sm:flex items-center space-x-2 text-[#4a3728] hover:text-[#6b4c3a] transition-colors font-medium p-2 rounded-lg hover:bg-gray-100">
+                            <button 
+                                onClick={openLogin}
+                                className="hidden sm:flex items-center space-x-2 text-[#4a3728] hover:text-[#6b4c3a] transition-colors font-medium p-2 rounded-lg hover:bg-gray-100"
+                            >
                                 <User className="w-5 h-5" />
                                 <span className="hidden lg:inline">Mi cuenta</span>
                             </button>
@@ -129,7 +133,13 @@ const Header: React.FC<HeaderProps> = ({ openCalculator, openCart, cartItemsCoun
                                 </a>
                                 
                                 {/* Botón Mi cuenta en móvil */}
-                                <button className="flex items-center space-x-3 w-full px-4 py-3 text-[#4a3728] hover:text-[#6b4c3a] hover:bg-gray-50 transition-colors font-medium rounded-lg mx-2 mt-4 border-t border-gray-200 pt-6">
+                                <button 
+                                    onClick={() => {
+                                        openLogin();
+                                        setIsMobileMenuOpen(false);
+                                    }}
+                                    className="flex items-center space-x-3 w-full px-4 py-3 text-[#4a3728] hover:text-[#6b4c3a] hover:bg-gray-50 transition-colors font-medium rounded-lg mx-2 mt-4 border-t border-gray-200 pt-6"
+                                >
                                     <User className="w-5 h-5" />
                                     <span>Mi cuenta</span>
                                 </button>
